@@ -1,0 +1,30 @@
+# ============================================
+# Development Dockerfile with Vite HMR support
+# ============================================
+FROM node:24-alpine
+
+# Install basic utilities
+RUN apk add --no-cache curl
+
+# Use existing node user from base image (UID/GID 1000)
+RUN mkdir -p /app && \
+    chown -R node:node /app
+
+# Set working directory
+WORKDIR /app
+
+# Switch to non-root user
+USER node
+
+# Copy package files only (for layer caching)
+COPY --chown=node:node package*.json ./
+
+# Install dependencies (including dev dependencies)
+RUN npm ci
+
+# Expose Vite dev server port
+EXPOSE 5173
+
+# Development command with Vite HMR
+# Note: The app code will be mounted as a volume, so we don't copy it here
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

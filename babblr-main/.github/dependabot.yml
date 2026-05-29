@@ -1,0 +1,100 @@
+# Dependabot configuration for automated dependency updates
+# See: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+#
+# Review Strategy:
+# - Maximum simplification: ONE PR per ecosystem monthly (3 PRs total)
+# - All ecosystems check on first Saturday of month at 03:00 Amsterdam
+# - Cron: 0 3 1-7 * 6 = minute 0, hour 3, days 1-7, any month, Saturday
+# - Updates reviewed and manually merged with attribution to @pkuppens
+# - Failed/problematic updates are deferred and tracked in CHANGELOG.md
+# - Cron expressions: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#schedule-
+
+version: 2
+updates:
+  # Python dependencies (backend)
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "cron"
+      cronjob: "0 3 1-7 * 6"
+      timezone: "Europe/Amsterdam"
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: "deps(backend)"
+      prefix-development: "deps-dev(backend)"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "python"
+    reviewers:
+      - "pkuppens"
+    assignees:
+      - "pkuppens"
+    groups:
+      # Group ALL backend updates into a single monthly PR
+      monthly-updates:
+        patterns:
+          - "*"
+
+  # Node.js dependencies (frontend)
+  - package-ecosystem: "npm"
+    directory: "/frontend"
+    schedule:
+      interval: "cron"
+      cronjob: "0 3 1-7 * 6"
+      timezone: "Europe/Amsterdam"
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: "deps(frontend)"
+      prefix-development: "deps-dev(frontend)"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "javascript"
+    reviewers:
+      - "pkuppens"
+    assignees:
+      - "pkuppens"
+    groups:
+      # Group ALL frontend updates into a single monthly PR
+      monthly-updates:
+        patterns:
+          - "*"
+    # Ignore patterns for problematic updates
+    ignore:
+      # React major versions need careful migration
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      # ESLint 10 ecosystem not ready: @typescript-eslint, eslint-plugin-react lack support
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@eslint/js"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint-plugin-react"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "cron"
+      cronjob: "0 3 1-7 * 6"
+      timezone: "Europe/Amsterdam"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    reviewers:
+      - "pkuppens"
+    assignees:
+      - "pkuppens"
+    groups:
+      # Group ALL GitHub Actions updates into a single monthly PR
+      monthly-updates:
+        patterns:
+          - "*"

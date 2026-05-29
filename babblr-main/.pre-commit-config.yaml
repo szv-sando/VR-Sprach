@@ -1,0 +1,141 @@
+repos:
+  # Prevent direct commits to main branch
+  - repo: local
+    hooks:
+      - id: no-commit-to-main
+        name: no-commit-to-main
+        entry: bash scripts/no-commit-to-main.sh
+        language: system
+        always_run: true
+        pass_filenames: false
+        stages: [pre-commit]
+
+  # Basic safety checks (including unresolved merge conflict markers)
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-merge-conflict
+
+  # Secret scanning - detect API keys, passwords, tokens before commit
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.13
+    hooks:
+      # Run format first - abort on failure
+      - id: ruff-format
+        args: ["--config", "backend/pyproject.toml"]
+        files: ^(backend|examples)/
+      # Run check with --fix - applies fixes then aborts so fixes can be committed
+      - id: ruff
+        args: ["--fix", "--config", "backend/pyproject.toml"]
+        files: ^(backend|examples)/
+
+  - repo: local
+    hooks:
+      - id: pyright
+        name: pyright
+        entry: uv run --no-sync --directory backend pyright
+        language: system
+        types: [python]
+        files: ^backend/
+        pass_filenames: false
+        always_run: true
+
+      # Cap workers to 2: unit tests include WhisperService (torch + Whisper model).
+      # -n auto would spawn one worker per CPU; multiple workers loading models can lock the system.
+      # --timeout=120: kill hung tests after 2 min (guardrail against programming errors).
+      # -vv: very verbose output for better progress tracking and debugging
+      - id: backend-tests
+        name: backend-tests
+        entry: uv run --no-sync --directory backend python -m pytest tests/ -vv --tb=short -m 'not integration' -n 2 --timeout=120
+        language: system
+        types: [python]
+        files: ^backend/
+        pass_filenames: false
+
+  # Frontend formatting/linting (TypeScript/React)
+  - repo: local
+    hooks:
+      # Run prettier first - abort on failure
+      - id: frontend-prettier
+        name: frontend-prettier
+        entry: bash -lc "npm --prefix frontend run format"
+        language: system
+        files: ^frontend/src/.*\.(ts|tsx|js|jsx|json|css)$
+        pass_filenames: false
+
+      # Run eslint with --fix - applies fixes then aborts so fixes can be committed
+      - id: frontend-eslint
+        name: frontend-eslint
+        entry: bash -lc "npm --prefix frontend run lint:fix"
+        language: system
+        files: ^frontend/src/.*\.(ts|tsx|js|jsx)$
+        pass_filenames: false
+
+      # Run tests only after formatting and linting pass
+      # Runs when frontend source, config, or dependency files change
+      # Matches CI: npm run test (which runs vitest run)
+      - id: frontend-tests
+        name: frontend-tests
+        entry: bash -lc "npm --prefix frontend run test"
+        language: system
+        files: ^frontend/(src/.*\.(ts|tsx|js|jsx)|package\.json|package-lock\.json|vite\.config\.|vitest\.config\.|tsconfig\.json)$
+        pass_filenames: false
+        always_run: false
+
+      # Node dependency audit - matches security workflow.
+      # --omit=dev: only audit production runtime deps; dev deps (electron-builder,
+      # eslint toolchain) are build tools never shipped to end users and contain
+      # transitive vulnerabilities that cannot be fixed without breaking changes.
+      - id: frontend-npm-audit
+        name: frontend-npm-audit
+        entry: bash -lc "npm --prefix frontend audit --omit=dev --audit-level=moderate"
+        language: system
+        pass_filenames: false
+        always_run: true
+
+  # Markdown checks (lint + broken internal links/anchors)
+  - repo: local
+    hooks:
+      - id: check-markdown-local-links
+        name: check markdown local links (files exist)
+        entry: python scripts/check_markdown_local_links.py
+        language: python
+        types: [markdown]
+
+      - id: markdownlint-cli2
+        name: markdownlint-cli2
+        entry: markdownlint-cli2
+        language: node
+        additional_dependencies:
+          - markdownlint-cli2@0.16.0
+        types: [markdown]
+        files: \.md$
+
+      - id: remark-validate-links
+        name: remark (validate links/references)
+        entry: remark
+        language: node
+        additional_dependencies:
+          - remark-cli@12.0.1
+          - remark-validate-links@13.0.1
+        args: ["--frail", "--use", "remark-validate-links"]
+        types: [markdown]
+        files: \.md$
+
+  # Clean Jupyter notebooks (remove outputs, execution counts, metadata)
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: 4.0.1
+    hooks:
+      - id: nb-clean
+        args:
+          - --remove-empty-cells
+          - --preserve-cell-metadata
+          - tags
+          - slideshow
+          - --
+        files: \.ipynb$

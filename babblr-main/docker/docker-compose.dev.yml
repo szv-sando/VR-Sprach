@@ -1,0 +1,132 @@
+services:
+  # Backend API (Development with hot-reload)
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile.dev
+    image: babblr-backend:dev
+    container_name: babblr-backend-dev
+    ports:
+      - "8000:8000"
+    environment:
+      - BABBLR_API_HOST=0.0.0.0
+      - BABBLR_API_PORT=8000
+      # Using SQLite for PoC (backend doesn't have asyncpg for PostgreSQL yet)
+      - BABBLR_CONVERSATION_DATABASE_URL=sqlite+aiosqlite:////data/babblr.db
+      - LLM_PROVIDER=${LLM_PROVIDER:-ollama}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.2:1b}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      - CORRECTION_MAX_LEVEL=${CORRECTION_MAX_LEVEL:-A2}
+      - CONVERSATION_MAX_HISTORY=${CONVERSATION_MAX_HISTORY:-5}
+      - BABBLR_AUDIO_STORAGE_PATH=/data/audio
+      - WHISPER_MODEL=${WHISPER_MODEL:-large-v3}
+      - WHISPER_DEVICE=${WHISPER_DEVICE:-auto}
+      - STT_PROVIDER=${STT_PROVIDER:-local}
+      - STT_WEBSERVICE_URL=${STT_WEBSERVICE_URL:-http://babblr-whisper:9000}
+      - STT_WEBSERVICE_TIMEOUT=${STT_WEBSERVICE_TIMEOUT:-300}
+      - STT_WEBSERVICE_DEVICE=${STT_WEBSERVICE_DEVICE:-auto}
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+    volumes:
+      # Mount source code for hot-reload
+      - ../backend:/app
+      # Exclude .venv to avoid conflicts
+      - /app/.venv
+      # Persistent data volumes
+      - babblr-volume-audio-files:/data/audio
+      - babblr-volume-whisper-models:/home/babblr/.cache/whisper
+      # SQLite database file
+      - babblr-volume-sqlite-db:/data
+    depends_on:
+      - ollama
+    restart: unless-stopped
+    networks:
+      - babblr-network
+    # GPU support for Whisper STT (requires NVIDIA Docker runtime)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # Frontend Web App (Development with Vite HMR)
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile.dev
+    image: babblr-frontend:dev
+    container_name: babblr-frontend-dev
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    volumes:
+      # Mount source code for hot-reload
+      - ../frontend:/app
+      # Exclude node_modules to avoid conflicts
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - babblr-network
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: babblr-postgres-dev
+    environment:
+      POSTGRES_USER: babblr
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: babblr
+    volumes:
+      - babblr-volume-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U babblr"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - babblr-network
+
+  # Ollama LLM Service
+  ollama:
+    image: ollama/ollama:latest
+    container_name: babblr-ollama-dev
+    ports:
+      - "11434:11434"
+    volumes:
+      - babblr-volume-ollama-models:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - babblr-network
+    # Uncomment for GPU support (requires NVIDIA Docker runtime)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  # Redis (Optional - for caching)
+  redis:
+    image: redis:7-alpine
+    container_name: babblr-redis-dev
+    ports:
+      - "6379:6379"
+    volumes:
+      - babblr-volume-redis-data:/data
+    restart: unless-stopped
+    networks:
+      - babblr-network
+
+# Volumes and networks are defined in docker-compose.base.yml
+# Use: docker-compose -f docker-compose.base.yml -f docker-compose.dev.yml up

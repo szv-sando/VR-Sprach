@@ -1,0 +1,1012 @@
+{
+  "topics": [
+    {
+      "id": "restaurant",
+      "icon": "🍽️",
+      "level": "A1",
+      "names": {
+        "spanish": "Restaurante",
+        "italian": "Ristorante",
+        "german": "Restaurant",
+        "french": "Restaurant",
+        "dutch": "Restaurant"
+      },
+      "descriptions": {
+        "spanish": "Pedir comida y bebidas",
+        "italian": "Ordinare cibo e bevande",
+        "german": "Essen und Getränke bestellen",
+        "french": "Commander nourriture et boissons",
+        "dutch": "Eten en drinken bestellen"
+      },
+      "starters": {
+        "spanish": [
+          "¿Tiene una mesa para dos personas?",
+          "¿Qué me recomienda?",
+          "Me gustaría pedir...",
+          "¿Puedo ver el menú, por favor?",
+          "La cuenta, por favor"
+        ],
+        "italian": [
+          "Ha un tavolo per due persone?",
+          "Cosa mi consiglia?",
+          "Vorrei ordinare...",
+          "Posso vedere il menù, per favore?",
+          "Il conto, per favore"
+        ],
+        "german": [
+          "Haben Sie einen Tisch für zwei Personen?",
+          "Was empfehlen Sie?",
+          "Ich möchte bestellen...",
+          "Kann ich bitte die Speisekarte sehen?",
+          "Die Rechnung, bitte"
+        ],
+        "french": [
+          "Avez-vous une table pour deux personnes?",
+          "Que me recommandez-vous?",
+          "Je voudrais commander...",
+          "Puis-je voir le menu, s'il vous plaît?",
+          "L'addition, s'il vous plaît"
+        ],
+        "dutch": [
+          "Heeft u een tafel voor twee personen?",
+          "Wat raadt u aan?",
+          "Ik zou graag willen bestellen...",
+          "Mag ik de menukaart zien, alstublieft?",
+          "De rekening, alstublieft"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un camarero amable en un restaurante. Ayudas a los clientes a elegir platos, respondes preguntas sobre el menú y tomas pedidos de forma profesional y cordial.",
+        "italian": "Sei un cameriere cordiale in un ristorante. Aiuti i clienti a scegliere i piatti, rispondi alle domande sul menu e prendi le ordinazioni in modo professionale e amichevole.",
+        "german": "Du bist ein freundlicher Kellner in einem Restaurant. Du hilfst den Gästen bei der Auswahl von Gerichten, beantwortest Fragen zur Speisekarte und nimmst Bestellungen professionell und herzlich entgegen.",
+        "french": "Tu es un serveur aimable dans un restaurant. Tu aides les clients à choisir des plats, réponds aux questions sur le menu et prends les commandes de manière professionnelle et cordiale.",
+        "dutch": "Je bent een vriendelijke ober in een restaurant. Je helpt gasten bij het kiezen van gerechten, beantwoordt vragen over het menu en neemt bestellingen op een professionele en hartelijke manier."
+      }
+    },
+    {
+      "id": "travel",
+      "icon": "✈️",
+      "level": "A2",
+      "names": {
+        "spanish": "Viajes y Transporte",
+        "italian": "Viaggi e Trasporti",
+        "german": "Reisen und Transport",
+        "french": "Voyages et Transports",
+        "dutch": "Reizen en Vervoer"
+      },
+      "descriptions": {
+        "spanish": "Navegando aeropuertos y trenes",
+        "italian": "Navigare aeroporti e treni",
+        "german": "Flughäfen und Züge navigieren",
+        "french": "Naviguer dans les aéroports et trains",
+        "dutch": "Luchthavens en treinen navigeren"
+      },
+      "starters": {
+        "spanish": [
+          "¿Dónde está la puerta de embarque?",
+          "¿Cuánto cuesta un billete a...?",
+          "¿A qué hora sale el próximo tren?",
+          "¿Necesito hacer transbordo?",
+          "¿Dónde puedo recoger mi equipaje?"
+        ],
+        "italian": [
+          "Dov'è il gate d'imbarco?",
+          "Quanto costa un biglietto per...?",
+          "A che ora parte il prossimo treno?",
+          "Devo fare cambio?",
+          "Dove posso ritirare il mio bagaglio?"
+        ],
+        "german": [
+          "Wo ist das Boarding-Gate?",
+          "Wie viel kostet ein Ticket nach...?",
+          "Wann fährt der nächste Zug?",
+          "Muss ich umsteigen?",
+          "Wo kann ich mein Gepäck abholen?"
+        ],
+        "french": [
+          "Où est la porte d'embarquement?",
+          "Combien coûte un billet pour...?",
+          "À quelle heure part le prochain train?",
+          "Dois-je changer de train?",
+          "Où puis-je récupérer mes bagages?"
+        ],
+        "dutch": [
+          "Waar is de gate?",
+          "Hoeveel kost een ticket naar...?",
+          "Hoe laat vertrekt de volgende trein?",
+          "Moet ik overstappen?",
+          "Waar kan ik mijn bagage ophalen?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un agente de información turística en un aeropuerto o estación de tren. Ayudas a los viajeros con horarios, conexiones, destinos y consejos de viaje.",
+        "italian": "Sei un agente di informazioni turistiche in un aeroporto o stazione ferroviaria. Aiuti i viaggiatori con orari, coincidenze, destinazioni e consigli di viaggio.",
+        "german": "Du bist ein Reiseinformationsagent an einem Flughafen oder Bahnhof. Du hilfst Reisenden mit Fahrplänen, Verbindungen, Zielen und Reisetipps.",
+        "french": "Tu es un agent d'information touristique dans un aéroport ou une gare. Tu aides les voyageurs avec les horaires, les correspondances, les destinations et les conseils de voyage.",
+        "dutch": "Je bent een reisinformatiemedewerker op een luchthaven of treinstation. Je helpt reizigers met dienstregelingen, overstappen, bestemmingen en reisadvies."
+      }
+    },
+    {
+      "id": "shopping",
+      "icon": "🛍️",
+      "level": "A1",
+      "names": {
+        "spanish": "Compras",
+        "italian": "Shopping",
+        "german": "Einkaufen",
+        "french": "Achats",
+        "dutch": "Winkelen"
+      },
+      "descriptions": {
+        "spanish": "Comprando ropa y productos",
+        "italian": "Acquistare vestiti e prodotti",
+        "german": "Kleidung und Produkte kaufen",
+        "french": "Acheter des vêtements et produits",
+        "dutch": "Kleding en producten kopen"
+      },
+      "starters": {
+        "spanish": [
+          "¿Cuánto cuesta esto?",
+          "¿Tiene esto en otra talla?",
+          "¿Puedo probarme esto?",
+          "¿Aceptan tarjetas de crédito?",
+          "Estoy buscando..."
+        ],
+        "italian": [
+          "Quanto costa questo?",
+          "Ha questo in un'altra taglia?",
+          "Posso provare questo?",
+          "Accettate carte di credito?",
+          "Sto cercando..."
+        ],
+        "german": [
+          "Wie viel kostet das?",
+          "Haben Sie das in einer anderen Größe?",
+          "Kann ich das anprobieren?",
+          "Akzeptieren Sie Kreditkarten?",
+          "Ich suche..."
+        ],
+        "french": [
+          "Combien ça coûte?",
+          "Avez-vous ceci dans une autre taille?",
+          "Puis-je essayer ceci?",
+          "Acceptez-vous les cartes de crédit?",
+          "Je cherche..."
+        ],
+        "dutch": [
+          "Hoeveel kost dit?",
+          "Heeft u dit in een andere maat?",
+          "Mag ik dit passen?",
+          "Accepteert u creditcards?",
+          "Ik ben op zoek naar..."
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un dependiente servicial en una tienda de ropa. Ayudas a los clientes a encontrar productos, tallas y estilos, y respondes preguntas sobre precios y formas de pago.",
+        "italian": "Sei un commesso disponibile in un negozio di abbigliamento. Aiuti i clienti a trovare prodotti, taglie e stili, e rispondi a domande su prezzi e metodi di pagamento.",
+        "german": "Du bist ein hilfsbereiter Verkäufer in einem Bekleidungsgeschäft. Du hilfst Kunden, Produkte, Größen und Stile zu finden, und beantwortest Fragen zu Preisen und Zahlungsmethoden.",
+        "french": "Tu es un vendeur serviable dans un magasin de vêtements. Tu aides les clients à trouver des produits, des tailles et des styles, et réponds aux questions sur les prix et les modes de paiement.",
+        "dutch": "Je bent een behulpzame verkoper in een kledingwinkel. Je helpt klanten producten, maten en stijlen te vinden, en beantwoordt vragen over prijzen en betaalmethodes."
+      }
+    },
+    {
+      "id": "work",
+      "icon": "💼",
+      "level": "B1",
+      "names": {
+        "spanish": "Trabajo y Oficina",
+        "italian": "Lavoro e Ufficio",
+        "german": "Arbeit und Büro",
+        "french": "Travail et Bureau",
+        "dutch": "Werk en Kantoor"
+      },
+      "descriptions": {
+        "spanish": "Comunicación profesional",
+        "italian": "Comunicazione professionale",
+        "german": "Professionelle Kommunikation",
+        "french": "Communication professionnelle",
+        "dutch": "Professionele communicatie"
+      },
+      "starters": {
+        "spanish": [
+          "Tengo una reunión a las...",
+          "¿Podría ayudarme con este proyecto?",
+          "Necesito una extensión del plazo",
+          "¿Cuándo es la fecha límite?",
+          "Me gustaría discutir mi progreso"
+        ],
+        "italian": [
+          "Ho una riunione alle...",
+          "Potrebbe aiutarmi con questo progetto?",
+          "Ho bisogno di una proroga",
+          "Quando è la scadenza?",
+          "Vorrei discutere i miei progressi"
+        ],
+        "german": [
+          "Ich habe ein Meeting um...",
+          "Könnten Sie mir bei diesem Projekt helfen?",
+          "Ich brauche eine Fristverlängerung",
+          "Wann ist die Deadline?",
+          "Ich möchte meinen Fortschritt besprechen"
+        ],
+        "french": [
+          "J'ai une réunion à...",
+          "Pourriez-vous m'aider avec ce projet?",
+          "J'ai besoin d'une prolongation",
+          "Quelle est la date limite?",
+          "Je voudrais discuter de mes progrès"
+        ],
+        "dutch": [
+          "Ik heb een vergadering om...",
+          "Kunt u mij helpen met dit project?",
+          "Ik heb een deadline verlenging nodig",
+          "Wanneer is de deadline?",
+          "Ik zou graag mijn voortgang bespreken"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un colega de trabajo amigable. Discutes proyectos, plazos, reuniones y colaboración profesional de manera natural y constructiva.",
+        "italian": "Sei un collega di lavoro amichevole. Discuti di progetti, scadenze, riunioni e collaborazione professionale in modo naturale e costruttivo.",
+        "german": "Du bist ein freundlicher Arbeitskollege. Du diskutierst über Projekte, Fristen, Besprechungen und berufliche Zusammenarbeit auf natürliche und konstruktive Weise.",
+        "french": "Tu es un collègue de travail amical. Tu discutes de projets, délais, réunions et collaboration professionnelle de manière naturelle et constructive.",
+        "dutch": "Je bent een vriendelijke collega. Je bespreekt projecten, deadlines, vergaderingen en professionele samenwerking op een natuurlijke en constructieve manier."
+      }
+    },
+    {
+      "id": "hobbies",
+      "icon": "🎨",
+      "level": "A2",
+      "names": {
+        "spanish": "Pasatiempos e Intereses",
+        "italian": "Hobby e Interessi",
+        "german": "Hobbys und Interessen",
+        "french": "Loisirs et Intérêts",
+        "dutch": "Hobby's en Interesses"
+      },
+      "descriptions": {
+        "spanish": "Hablando de actividades favoritas",
+        "italian": "Parlare di attività preferite",
+        "german": "Über Lieblingsaktivitäten sprechen",
+        "french": "Parler d'activités favorites",
+        "dutch": "Over favoriete activiteiten praten"
+      },
+      "starters": {
+        "spanish": [
+          "Me encanta...",
+          "En mi tiempo libre, yo...",
+          "¿Qué te gusta hacer?",
+          "Mi pasatiempo favorito es...",
+          "¿Has probado alguna vez...?"
+        ],
+        "italian": [
+          "Mi piace molto...",
+          "Nel mio tempo libero, io...",
+          "Cosa ti piace fare?",
+          "Il mio hobby preferito è...",
+          "Hai mai provato...?"
+        ],
+        "german": [
+          "Ich liebe...",
+          "In meiner Freizeit...",
+          "Was machst du gerne?",
+          "Mein Lieblingshobby ist...",
+          "Hast du jemals... ausprobiert?"
+        ],
+        "french": [
+          "J'adore...",
+          "Pendant mon temps libre, je...",
+          "Qu'aimes-tu faire?",
+          "Mon passe-temps favori est...",
+          "As-tu déjà essayé...?"
+        ],
+        "dutch": [
+          "Ik hou van...",
+          "In mijn vrije tijd...",
+          "Wat vind je leuk om te doen?",
+          "Mijn favoriete hobby is...",
+          "Heb je ooit... geprobeerd?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un amigo entusiasta que ama compartir intereses y pasatiempos. Discutes actividades favoritas, experiencias y recomendaciones de forma animada.",
+        "italian": "Sei un amico entusiasta che ama condividere interessi e hobby. Discuti di attività preferite, esperienze e raccomandazioni in modo animato.",
+        "german": "Du bist ein begeisterter Freund, der gerne Interessen und Hobbys teilt. Du diskutierst über Lieblingsaktivitäten, Erfahrungen und Empfehlungen auf lebhafte Weise.",
+        "french": "Tu es un ami enthousiaste qui aime partager des intérêts et des passe-temps. Tu discutes d'activités favorites, d'expériences et de recommandations de manière animée.",
+        "dutch": "Je bent een enthousiaste vriend die graag interesses en hobby's deelt. Je bespreekt favoriete activiteiten, ervaringen en aanbevelingen op een levendige manier."
+      }
+    },
+    {
+      "id": "health",
+      "icon": "🏥",
+      "level": "A2",
+      "names": {
+        "spanish": "Salud y Doctor",
+        "italian": "Salute e Dottore",
+        "german": "Gesundheit und Arzt",
+        "french": "Santé et Médecin",
+        "dutch": "Gezondheid en Dokter"
+      },
+      "descriptions": {
+        "spanish": "Describiendo síntomas y salud",
+        "italian": "Descrivere sintomi e salute",
+        "german": "Symptome und Gesundheit beschreiben",
+        "french": "Décrire symptômes et santé",
+        "dutch": "Symptomen en gezondheid beschrijven"
+      },
+      "starters": {
+        "spanish": [
+          "No me siento bien",
+          "Me duele la cabeza",
+          "Necesito una cita con el médico",
+          "¿Tiene algo para...?",
+          "Soy alérgico a..."
+        ],
+        "italian": [
+          "Non mi sento bene",
+          "Mi fa male la testa",
+          "Ho bisogno di un appuntamento dal medico",
+          "Ha qualcosa per...?",
+          "Sono allergico a..."
+        ],
+        "german": [
+          "Ich fühle mich nicht gut",
+          "Ich habe Kopfschmerzen",
+          "Ich brauche einen Arzttermin",
+          "Haben Sie etwas für...?",
+          "Ich bin allergisch gegen..."
+        ],
+        "french": [
+          "Je ne me sens pas bien",
+          "J'ai mal à la tête",
+          "J'ai besoin d'un rendez-vous chez le médecin",
+          "Avez-vous quelque chose pour...?",
+          "Je suis allergique à..."
+        ],
+        "dutch": [
+          "Ik voel me niet goed",
+          "Ik heb hoofdpijn",
+          "Ik heb een afspraak bij de dokter nodig",
+          "Heeft u iets voor...?",
+          "Ik ben allergisch voor..."
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un farmacéutico o médico comprensivo. Escuchas síntomas con empatía, ofreces consejos de salud y respondes preguntas médicas básicas con profesionalismo.",
+        "italian": "Sei un farmacista o medico comprensivo. Ascolti i sintomi con empatia, offri consigli sulla salute e rispondi a domande mediche di base con professionalità.",
+        "german": "Du bist ein verständnisvoller Apotheker oder Arzt. Du hörst dir Symptome einfühlsam an, gibst Gesundheitsratschläge und beantwortest grundlegende medizinische Fragen professionell.",
+        "french": "Tu es un pharmacien ou médecin compréhensif. Tu écoutes les symptômes avec empathie, offres des conseils de santé et réponds aux questions médicales de base avec professionnalisme.",
+        "dutch": "Je bent een begripvolle apotheker of arts. Je luistert met empathie naar symptomen, geeft gezondheidsadvies en beantwoordt basis medische vragen professioneel."
+      }
+    },
+    {
+      "id": "weather",
+      "icon": "🌤️",
+      "level": "A1",
+      "names": {
+        "spanish": "Clima y Charla",
+        "italian": "Tempo e Chiacchiere",
+        "german": "Wetter und Smalltalk",
+        "french": "Météo et Discussion",
+        "dutch": "Weer en Kletsen"
+      },
+      "descriptions": {
+        "spanish": "Conversación casual sobre el clima",
+        "italian": "Conversazione casual sul tempo",
+        "german": "Ungezwungene Konversation über das Wetter",
+        "french": "Conversation décontractée sur la météo",
+        "dutch": "Informeel gesprek over het weer"
+      },
+      "starters": {
+        "spanish": [
+          "¡Qué buen día hace hoy!",
+          "¿Cómo está el clima?",
+          "Parece que va a llover",
+          "Hace mucho calor hoy",
+          "¿Qué temperatura hace?"
+        ],
+        "italian": [
+          "Che bella giornata oggi!",
+          "Com'è il tempo?",
+          "Sembra che pioverà",
+          "Fa molto caldo oggi",
+          "Che temperatura c'è?"
+        ],
+        "german": [
+          "Was für ein schöner Tag heute!",
+          "Wie ist das Wetter?",
+          "Es sieht nach Regen aus",
+          "Es ist heute sehr heiß",
+          "Wie viel Grad sind es?"
+        ],
+        "french": [
+          "Quelle belle journée aujourd'hui!",
+          "Quel temps fait-il?",
+          "On dirait qu'il va pleuvoir",
+          "Il fait très chaud aujourd'hui",
+          "Quelle est la température?"
+        ],
+        "dutch": [
+          "Wat een mooie dag vandaag!",
+          "Hoe is het weer?",
+          "Het lijkt te gaan regenen",
+          "Het is vandaag erg warm",
+          "Hoeveel graden is het?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un amigo conversador que disfruta de la charla casual. Hablas sobre el clima, planes y observaciones cotidianas de forma relajada y natural.",
+        "italian": "Sei un amico chiacchierone che gode della conversazione casual. Parli del tempo, dei piani e delle osservazioni quotidiane in modo rilassato e naturale.",
+        "german": "Du bist ein gesprächiger Freund, der lockere Unterhaltungen genießt. Du sprichst über das Wetter, Pläne und alltägliche Beobachtungen auf entspannte und natürliche Weise.",
+        "french": "Tu es un ami bavard qui aime la conversation décontractée. Tu parles de la météo, des plans et des observations quotidiennes de manière détendue et naturelle.",
+        "dutch": "Je bent een praatgrage vriend die van casual conversatie houdt. Je praat over het weer, plannen en dagelijkse observaties op een ontspannen en natuurlijke manier."
+      }
+    },
+    {
+      "id": "family",
+      "icon": "👨‍👩‍👧‍👦",
+      "level": "A1",
+      "names": {
+        "spanish": "Familia y Amigos",
+        "italian": "Famiglia e Amici",
+        "german": "Familie und Freunde",
+        "french": "Famille et Amis",
+        "dutch": "Familie en Vrienden"
+      },
+      "descriptions": {
+        "spanish": "Hablando de relaciones",
+        "italian": "Parlare di relazioni",
+        "german": "Über Beziehungen sprechen",
+        "french": "Parler de relations",
+        "dutch": "Over relaties praten"
+      },
+      "starters": {
+        "spanish": [
+          "Tengo dos hermanos",
+          "Mi familia es grande",
+          "¿Tienes hermanos?",
+          "Mis padres viven en...",
+          "Mi mejor amigo se llama..."
+        ],
+        "italian": [
+          "Ho due fratelli",
+          "La mia famiglia è grande",
+          "Hai fratelli?",
+          "I miei genitori vivono a...",
+          "Il mio migliore amico si chiama..."
+        ],
+        "german": [
+          "Ich habe zwei Geschwister",
+          "Meine Familie ist groß",
+          "Hast du Geschwister?",
+          "Meine Eltern wohnen in...",
+          "Mein bester Freund heißt..."
+        ],
+        "french": [
+          "J'ai deux frères et sœurs",
+          "Ma famille est grande",
+          "As-tu des frères et sœurs?",
+          "Mes parents vivent à...",
+          "Mon meilleur ami s'appelle..."
+        ],
+        "dutch": [
+          "Ik heb twee broers en zussen",
+          "Mijn familie is groot",
+          "Heb je broers of zussen?",
+          "Mijn ouders wonen in...",
+          "Mijn beste vriend heet..."
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un amigo cercano que le interesa conocer a tu familia. Haces preguntas sobre relaciones familiares y compartes historias personales de forma cálida.",
+        "italian": "Sei un amico stretto interessato a conoscere la tua famiglia. Fai domande sulle relazioni familiari e condividi storie personali in modo caloroso.",
+        "german": "Du bist ein enger Freund, der sich für deine Familie interessiert. Du stellst Fragen zu Familienbeziehungen und teilst persönliche Geschichten auf herzliche Weise.",
+        "french": "Tu es un ami proche intéressé à connaître ta famille. Tu poses des questions sur les relations familiales et partages des histoires personnelles de manière chaleureuse.",
+        "dutch": "Je bent een goede vriend die geïnteresseerd is in je familie. Je stelt vragen over familierelaties en deelt persoonlijke verhalen op een warme manier."
+      }
+    },
+    {
+      "id": "daily-routine",
+      "icon": "⏰",
+      "level": "A2",
+      "names": {
+        "spanish": "Rutina Diaria",
+        "italian": "Routine Quotidiana",
+        "german": "Tägliche Routine",
+        "french": "Routine Quotidienne",
+        "dutch": "Dagelijkse Routine"
+      },
+      "descriptions": {
+        "spanish": "Describiendo actividades diarias",
+        "italian": "Descrivere attività quotidiane",
+        "german": "Tägliche Aktivitäten beschreiben",
+        "french": "Décrire activités quotidiennes",
+        "dutch": "Dagelijkse activiteiten beschrijven"
+      },
+      "starters": {
+        "spanish": [
+          "Me despierto a las...",
+          "Todos los días, yo...",
+          "Por la mañana, primero...",
+          "Después del trabajo, yo...",
+          "Mi rutina típica es..."
+        ],
+        "italian": [
+          "Mi sveglio alle...",
+          "Ogni giorno, io...",
+          "La mattina, prima...",
+          "Dopo il lavoro, io...",
+          "La mia routine tipica è..."
+        ],
+        "german": [
+          "Ich wache um... Uhr auf",
+          "Jeden Tag...",
+          "Am Morgen, zuerst...",
+          "Nach der Arbeit...",
+          "Meine typische Routine ist..."
+        ],
+        "french": [
+          "Je me réveille à...",
+          "Tous les jours, je...",
+          "Le matin, d'abord...",
+          "Après le travail, je...",
+          "Ma routine typique est..."
+        ],
+        "dutch": [
+          "Ik word wakker om...",
+          "Elke dag...",
+          "'s Ochtends eerst...",
+          "Na het werk...",
+          "Mijn typische routine is..."
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un compañero de piso curioso sobre las rutinas diarias. Discutes horarios, hábitos y organización del día de manera amistosa e informal.",
+        "italian": "Sei un coinquilino curioso delle routine quotidiane. Discuti di orari, abitudini e organizzazione della giornata in modo amichevole e informale.",
+        "german": "Du bist ein Mitbewohner, der sich für tägliche Routinen interessiert. Du diskutierst über Zeitpläne, Gewohnheiten und Tagesorganisation auf freundliche und ungezwungene Weise.",
+        "french": "Tu es un colocataire curieux des routines quotidiennes. Tu discutes d'horaires, d'habitudes et d'organisation de la journée de manière amicale et informelle.",
+        "dutch": "Je bent een kamergenoot die nieuwsgierig is naar dagelijkse routines. Je bespreekt schema's, gewoontes en dagorganisatie op een vriendelijke en informele manier."
+      }
+    },
+    {
+      "id": "sports",
+      "icon": "⚽",
+      "level": "A2",
+      "names": {
+        "spanish": "Deportes y Fitness",
+        "italian": "Sport e Fitness",
+        "german": "Sport und Fitness",
+        "french": "Sports et Fitness",
+        "dutch": "Sport en Fitness"
+      },
+      "descriptions": {
+        "spanish": "Hablando de ejercicio y deportes",
+        "italian": "Parlare di esercizio e sport",
+        "german": "Über Bewegung und Sport sprechen",
+        "french": "Parler d'exercice et sports",
+        "dutch": "Over oefening en sport praten"
+      },
+      "starters": {
+        "spanish": [
+          "Me gusta jugar al...",
+          "Voy al gimnasio tres veces por semana",
+          "¿Practicas algún deporte?",
+          "Mi equipo favorito es...",
+          "¿Viste el partido ayer?"
+        ],
+        "italian": [
+          "Mi piace giocare a...",
+          "Vado in palestra tre volte a settimana",
+          "Pratichi qualche sport?",
+          "La mia squadra preferita è...",
+          "Hai visto la partita ieri?"
+        ],
+        "german": [
+          "Ich spiele gerne...",
+          "Ich gehe dreimal pro Woche ins Fitnessstudio",
+          "Machst du Sport?",
+          "Meine Lieblingsmannschaft ist...",
+          "Hast du das Spiel gestern gesehen?"
+        ],
+        "french": [
+          "J'aime jouer au...",
+          "Je vais à la salle de sport trois fois par semaine",
+          "Pratiques-tu un sport?",
+          "Mon équipe préférée est...",
+          "As-tu vu le match hier?"
+        ],
+        "dutch": [
+          "Ik speel graag...",
+          "Ik ga drie keer per week naar de sportschool",
+          "Beoefen je een sport?",
+          "Mijn favoriete team is...",
+          "Heb je de wedstrijd gisteren gezien?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un compañero deportivo entusiasta. Hablas sobre ejercicio, equipos favoritos, partidos y experiencias deportivas con energía y pasión.",
+        "italian": "Sei un compagno sportivo entusiasta. Parli di esercizio, squadre favorite, partite ed esperienze sportive con energia e passione.",
+        "german": "Du bist ein begeisterter Sportfreund. Du sprichst über Sport, Lieblingsmannschaften, Spiele und Sporterfahrungen mit Energie und Leidenschaft.",
+        "french": "Tu es un compagnon sportif enthousiaste. Tu parles d'exercice, d'équipes favorites, de matchs et d'expériences sportives avec énergie et passion.",
+        "dutch": "Je bent een enthousiaste sportmaatje. Je praat over oefeningen, favoriete teams, wedstrijden en sportervaringen met energie en passie."
+      }
+    },
+    {
+      "id": "culture",
+      "icon": "🎭",
+      "level": "B1",
+      "names": {
+        "spanish": "Cultura y Entretenimiento",
+        "italian": "Cultura e Intrattenimento",
+        "german": "Kultur und Unterhaltung",
+        "french": "Culture et Divertissement",
+        "dutch": "Cultuur en Entertainment"
+      },
+      "descriptions": {
+        "spanish": "Discutiendo películas, música y arte",
+        "italian": "Discutere di film, musica e arte",
+        "german": "Über Filme, Musik und Kunst diskutieren",
+        "french": "Discuter de films, musique et art",
+        "dutch": "Films, muziek en kunst bespreken"
+      },
+      "starters": {
+        "spanish": [
+          "¿Has visto la nueva película de...?",
+          "Mi género musical favorito es...",
+          "¿Qué tipo de libros lees?",
+          "Me encanta ir a museos",
+          "¿Cuál es tu serie favorita?"
+        ],
+        "italian": [
+          "Hai visto il nuovo film di...?",
+          "Il mio genere musicale preferito è...",
+          "Che tipo di libri leggi?",
+          "Mi piace molto andare ai musei",
+          "Qual è la tua serie preferita?"
+        ],
+        "german": [
+          "Hast du den neuen Film von... gesehen?",
+          "Mein Lieblingsmusikgenre ist...",
+          "Welche Art von Büchern liest du?",
+          "Ich gehe gerne in Museen",
+          "Was ist deine Lieblingsserie?"
+        ],
+        "french": [
+          "As-tu vu le nouveau film de...?",
+          "Mon genre musical préféré est...",
+          "Quel type de livres lis-tu?",
+          "J'adore aller aux musées",
+          "Quelle est ta série préférée?"
+        ],
+        "dutch": [
+          "Heb je de nieuwe film van... gezien?",
+          "Mijn favoriete muziekgenre is...",
+          "Wat voor boeken lees je?",
+          "Ik ga graag naar museums",
+          "Wat is je favoriete serie?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un entusiasta cultural que ama las artes. Discutes películas, música, libros y arte con pasión, compartiendo opiniones y recomendaciones.",
+        "italian": "Sei un appassionato culturale che ama le arti. Discuti di film, musica, libri e arte con passione, condividendo opinioni e raccomandazioni.",
+        "german": "Du bist ein Kulturliebhaber, der Kunst liebt. Du diskutierst über Filme, Musik, Bücher und Kunst mit Leidenschaft und teilst Meinungen und Empfehlungen.",
+        "french": "Tu es un passionné de culture qui aime les arts. Tu discutes de films, musique, livres et art avec passion, partageant opinions et recommandations.",
+        "dutch": "Je bent een cultuurliefhebber die van kunst houdt. Je bespreekt films, muziek, boeken en kunst met passie, en deelt meningen en aanbevelingen."
+      }
+    },
+    {
+      "id": "technology",
+      "icon": "💻",
+      "level": "B1",
+      "names": {
+        "spanish": "Tecnología",
+        "italian": "Tecnologia",
+        "german": "Technologie",
+        "french": "Technologie",
+        "dutch": "Technologie"
+      },
+      "descriptions": {
+        "spanish": "Hablando de dispositivos y digital",
+        "italian": "Parlare di dispositivi e digitale",
+        "german": "Über Geräte und Digital sprechen",
+        "french": "Parler d'appareils et numérique",
+        "dutch": "Over apparaten en digitaal praten"
+      },
+      "starters": {
+        "spanish": [
+          "¿Usas redes sociales?",
+          "Mi teléfono no funciona",
+          "¿Me puedes ayudar con la wifi?",
+          "¿Qué aplicaciones usas?",
+          "La tecnología está cambiando todo"
+        ],
+        "italian": [
+          "Usi i social media?",
+          "Il mio telefono non funziona",
+          "Puoi aiutarmi con il wifi?",
+          "Quali app usi?",
+          "La tecnologia sta cambiando tutto"
+        ],
+        "german": [
+          "Benutzt du soziale Medien?",
+          "Mein Telefon funktioniert nicht",
+          "Kannst du mir mit dem WLAN helfen?",
+          "Welche Apps benutzt du?",
+          "Technologie verändert alles"
+        ],
+        "french": [
+          "Utilises-tu les réseaux sociaux?",
+          "Mon téléphone ne fonctionne pas",
+          "Peux-tu m'aider avec le wifi?",
+          "Quelles applications utilises-tu?",
+          "La technologie change tout"
+        ],
+        "dutch": [
+          "Gebruik je social media?",
+          "Mijn telefoon werkt niet",
+          "Kun je me helpen met de wifi?",
+          "Welke apps gebruik je?",
+          "Technologie verandert alles"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un amigo experto en tecnología que ayuda con problemas técnicos. Discutes dispositivos, aplicaciones y tendencias digitales de forma accesible.",
+        "italian": "Sei un amico esperto di tecnologia che aiuta con problemi tecnici. Discuti di dispositivi, app e tendenze digitali in modo accessibile.",
+        "german": "Du bist ein technikbegeisterter Freund, der bei technischen Problemen hilft. Du diskutierst über Geräte, Apps und digitale Trends auf zugängliche Weise.",
+        "french": "Tu es un ami expert en technologie qui aide avec les problèmes techniques. Tu discutes d'appareils, d'applications et de tendances numériques de manière accessible.",
+        "dutch": "Je bent een tech-savvy vriend die helpt met technische problemen. Je bespreekt apparaten, apps en digitale trends op een toegankelijke manier."
+      }
+    },
+    {
+      "id": "housing",
+      "icon": "🏠",
+      "level": "B1",
+      "names": {
+        "spanish": "Vivienda y Bienes Raíces",
+        "italian": "Casa e Immobiliare",
+        "german": "Wohnen und Immobilien",
+        "french": "Logement et Immobilier",
+        "dutch": "Huisvesting en Vastgoed"
+      },
+      "descriptions": {
+        "spanish": "Buscando y describiendo casas",
+        "italian": "Cercare e descrivere case",
+        "german": "Häuser suchen und beschreiben",
+        "french": "Chercher et décrire maisons",
+        "dutch": "Huizen zoeken en beschrijven"
+      },
+      "starters": {
+        "spanish": [
+          "Estoy buscando un apartamento",
+          "¿Cuál es el alquiler mensual?",
+          "¿Cuántos dormitorios tiene?",
+          "¿Está amueblado?",
+          "¿Cuándo está disponible?"
+        ],
+        "italian": [
+          "Sto cercando un appartamento",
+          "Qual è l'affitto mensile?",
+          "Quante camere da letto ha?",
+          "È arredato?",
+          "Quando è disponibile?"
+        ],
+        "german": [
+          "Ich suche eine Wohnung",
+          "Wie hoch ist die monatliche Miete?",
+          "Wie viele Schlafzimmer hat sie?",
+          "Ist sie möbliert?",
+          "Wann ist sie verfügbar?"
+        ],
+        "french": [
+          "Je cherche un appartement",
+          "Quel est le loyer mensuel?",
+          "Combien de chambres a-t-il?",
+          "Est-il meublé?",
+          "Quand est-il disponible?"
+        ],
+        "dutch": [
+          "Ik ben op zoek naar een appartement",
+          "Wat is de maandelijkse huur?",
+          "Hoeveel slaapkamers heeft het?",
+          "Is het gemeubileerd?",
+          "Wanneer is het beschikbaar?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un agente inmobiliario profesional. Ayudas a encontrar viviendas, discutes características, precios y términos de alquiler de forma clara y útil.",
+        "italian": "Sei un agente immobiliare professionale. Aiuti a trovare abitazioni, discuti di caratteristiche, prezzi e termini di affitto in modo chiaro e utile.",
+        "german": "Du bist ein professioneller Immobilienmakler. Du hilfst bei der Wohnungssuche, diskutierst über Ausstattung, Preise und Mietbedingungen klar und hilfreich.",
+        "french": "Tu es un agent immobilier professionnel. Tu aides à trouver des logements, discutes des caractéristiques, prix et conditions de location de manière claire et utile.",
+        "dutch": "Je bent een professionele makelaar. Je helpt bij het vinden van woningen, bespreekt kenmerken, prijzen en huurvoorwaarden op een duidelijke en nuttige manier."
+      }
+    },
+    {
+      "id": "education",
+      "icon": "📚",
+      "level": "B1",
+      "names": {
+        "spanish": "Educación y Aprendizaje",
+        "italian": "Istruzione e Apprendimento",
+        "german": "Bildung und Lernen",
+        "french": "Éducation et Apprentissage",
+        "dutch": "Onderwijs en Leren"
+      },
+      "descriptions": {
+        "spanish": "Discutiendo estudios y escuela",
+        "italian": "Discutere di studi e scuola",
+        "german": "Über Studium und Schule diskutieren",
+        "french": "Discuter d'études et école",
+        "dutch": "Studies en school bespreken"
+      },
+      "starters": {
+        "spanish": [
+          "Estudio...",
+          "¿Qué estás estudiando?",
+          "Tengo un examen la próxima semana",
+          "Mi profesor es muy bueno",
+          "¿Dónde estudiaste?"
+        ],
+        "italian": [
+          "Studio...",
+          "Cosa stai studiando?",
+          "Ho un esame la prossima settimana",
+          "Il mio professore è molto bravo",
+          "Dove hai studiato?"
+        ],
+        "german": [
+          "Ich studiere...",
+          "Was studierst du?",
+          "Ich habe nächste Woche eine Prüfung",
+          "Mein Professor ist sehr gut",
+          "Wo hast du studiert?"
+        ],
+        "french": [
+          "J'étudie...",
+          "Qu'étudies-tu?",
+          "J'ai un examen la semaine prochaine",
+          "Mon professeur est très bon",
+          "Où as-tu étudié?"
+        ],
+        "dutch": [
+          "Ik studeer...",
+          "Wat studeer je?",
+          "Ik heb volgende week een tentamen",
+          "Mijn docent is erg goed",
+          "Waar heb je gestudeerd?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un compañero de estudios amigable. Discutes materias, exámenes, profesores y experiencias académicas de forma comprensiva y motivadora.",
+        "italian": "Sei un compagno di studi amichevole. Discuti di materie, esami, professori ed esperienze accademiche in modo comprensivo e motivante.",
+        "german": "Du bist ein freundlicher Studienfreund. Du diskutierst über Fächer, Prüfungen, Professoren und akademische Erfahrungen auf verständnisvolle und motivierende Weise.",
+        "french": "Tu es un camarade d'études amical. Tu discutes de matières, examens, professeurs et expériences académiques de manière compréhensive et motivante.",
+        "dutch": "Je bent een vriendelijke studiegenoot. Je bespreekt vakken, tentamens, docenten en academische ervaringen op een begripvolle en motiverende manier."
+      }
+    },
+    {
+      "id": "emergency",
+      "icon": "🚨",
+      "level": "A2",
+      "names": {
+        "spanish": "Situaciones de Emergencia",
+        "italian": "Situazioni di Emergenza",
+        "german": "Notsituationen",
+        "french": "Situations d'Urgence",
+        "dutch": "Noodsituaties"
+      },
+      "descriptions": {
+        "spanish": "Pidiendo ayuda urgente",
+        "italian": "Chiedere aiuto urgente",
+        "german": "Dringende Hilfe erbitten",
+        "french": "Demander aide urgente",
+        "dutch": "Dringende hulp vragen"
+      },
+      "starters": {
+        "spanish": [
+          "¡Necesito ayuda!",
+          "¿Dónde está el hospital más cercano?",
+          "He perdido mi pasaporte",
+          "¡Llame a la policía!",
+          "¿Puede ayudarme, por favor?"
+        ],
+        "italian": [
+          "Ho bisogno di aiuto!",
+          "Dov'è l'ospedale più vicino?",
+          "Ho perso il passaporto",
+          "Chiami la polizia!",
+          "Può aiutarmi, per favore?"
+        ],
+        "german": [
+          "Ich brauche Hilfe!",
+          "Wo ist das nächste Krankenhaus?",
+          "Ich habe meinen Pass verloren",
+          "Rufen Sie die Polizei!",
+          "Können Sie mir bitte helfen?"
+        ],
+        "french": [
+          "J'ai besoin d'aide!",
+          "Où est l'hôpital le plus proche?",
+          "J'ai perdu mon passeport",
+          "Appelez la police!",
+          "Pouvez-vous m'aider, s'il vous plaît?"
+        ],
+        "dutch": [
+          "Ik heb hulp nodig!",
+          "Waar is het dichtstbijzijnde ziekenhuis?",
+          "Ik ben mijn paspoort kwijt",
+          "Bel de politie!",
+          "Kunt u mij alstublieft helpen?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres una persona servicial en una situación de emergencia. Respondes con calma, ofreces ayuda práctica y diriges hacia los servicios necesarios.",
+        "italian": "Sei una persona disponibile in una situazione di emergenza. Rispondi con calma, offri aiuto pratico e indirizzi verso i servizi necessari.",
+        "german": "Du bist eine hilfsbereite Person in einer Notsituation. Du antwortest ruhig, bietest praktische Hilfe und verweist auf die notwendigen Dienste.",
+        "french": "Tu es une personne serviable dans une situation d'urgence. Tu réponds calmement, offres une aide pratique et diriges vers les services nécessaires.",
+        "dutch": "Je bent een behulpzaam persoon in een noodsituatie. Je reageert kalm, biedt praktische hulp en verwijst naar de benodigde diensten."
+      }
+    },
+    {
+      "id": "classroom",
+      "icon": "📚",
+      "level": "A1",
+      "names": {
+        "spanish": "En el aula",
+        "italian": "In classe",
+        "german": "Im Klassenzimmer",
+        "french": "En classe",
+        "dutch": "In de klas"
+      },
+      "descriptions": {
+        "spanish": "Aprender el idioma con lecciones y ejercicios",
+        "italian": "Imparare la lingua con lezioni ed esercizi",
+        "german": "Sprache lernen mit Lektionen und Übungen",
+        "french": "Apprendre la langue avec des leçons et des exercices",
+        "dutch": "Taal leren met lessen en oefeningen"
+      },
+      "starters": {
+        "spanish": [
+          "¿Puede explicar esto, por favor?",
+          "No entiendo esta palabra",
+          "¿Cómo se dice...?",
+          "¿Puedo hacer una pregunta?",
+          "¿Puede repetir, por favor?"
+        ],
+        "italian": [
+          "Può spiegare questo, per favore?",
+          "Non capisco questa parola",
+          "Come si dice...?",
+          "Posso fare una domanda?",
+          "Può ripetere, per favore?"
+        ],
+        "german": [
+          "Können Sie das bitte erklären?",
+          "Ich verstehe dieses Wort nicht",
+          "Wie sagt man...?",
+          "Darf ich eine Frage stellen?",
+          "Können Sie das bitte wiederholen?"
+        ],
+        "french": [
+          "Pouvez-vous expliquer cela, s'il vous plaît?",
+          "Je ne comprends pas ce mot",
+          "Comment dit-on...?",
+          "Puis-je poser une question?",
+          "Pouvez-vous répéter, s'il vous plaît?"
+        ],
+        "dutch": [
+          "Kunt u dit alstublieft uitleggen?",
+          "Ik begrijp dit woord niet",
+          "Hoe zeg je...?",
+          "Mag ik een vraag stellen?",
+          "Kunt u dit alstublieft herhalen?"
+        ]
+      },
+      "roleplayContext": {
+        "spanish": "Eres un profesor de idiomas paciente y alentador. Explicas conceptos claramente, respondes preguntas y motivas el aprendizaje activo del idioma.",
+        "italian": "Sei un insegnante di lingue paziente e incoraggiante. Spieghi i concetti chiaramente, rispondi alle domande e motivi l'apprendimento attivo della lingua.",
+        "german": "Du bist ein geduldiger und ermutigender Sprachlehrer. Du erklärst Konzepte klar, beantwortest Fragen und motivierst zum aktiven Sprachenlernen.",
+        "french": "Tu es un professeur de langues patient et encourageant. Tu expliques les concepts clairement, réponds aux questions et motives l'apprentissage actif de la langue.",
+        "dutch": "Je bent een geduldige en bemoedigende taalleraar. Je legt concepten duidelijk uit, beantwoordt vragen en motiveert tot actief taaleren."
+      }
+    }
+  ]
+}
